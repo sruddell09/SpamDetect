@@ -1,5 +1,5 @@
 # SpamDetect
-This is a python program that emulates a spam detector using a Naive Bayes classifier.
+This is a Python program that emulates a spam detector using a Naive Bayes classifier.
 
 Pipe the training file ("spam_assassin.train") using cat into spamDetect.py. 
 The program outputs the precision and recall of the spam dectector based on the test file ("spam_assassin.train"). 
