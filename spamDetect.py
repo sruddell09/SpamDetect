@@ -4,6 +4,7 @@ from math import log
 def process_line(line):
     label, subject_line = line.strip().split('\t') 
     words = subject_line.split()
+
     return label, words
 
 def update_counts(label, words, dict_class, dict_spam, dict_ham):
@@ -103,7 +104,6 @@ if __name__ == '__main__':
     dict_spam, dict_ham = smooth(dict_spam, dict_ham)
     dict_spam, dict_ham = normalize(dict_spam, dict_ham, ds_tokens, dh_tokens)
     
-
     ###TESTING###
 
     TP = 0.0 #True positives
